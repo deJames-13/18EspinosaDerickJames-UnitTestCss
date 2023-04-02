@@ -1,0 +1,80 @@
+.contact-wrapper {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.contact-container {
+  height: 90%;
+  margin: 0 1rem;
+  padding: 5rem;
+  border: 1px solid #ebebeb;
+  border-radius: 1rem;
+  background-color: #2d2d2d13;
+}
+.user-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.user-input {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.input-textbox,
+.input-text {
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #ebebeb;
+  border: none;
+  color: #2d2d2d;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(66, 66, 66, 0.75);
+}
+.input-text :focus {
+  outline: none;
+}
+.input-date {
+  background-color: #ebebeb;
+  padding: 1rem;
+  color: #2d2d2d;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(66, 66, 66, 0.75);
+}
+.input-textbox {
+  width: 100%;
+  padding: 3rem;
+  font-family: Arial, sans-serif;
+  color: #2d2d2d;
+  resize: none;
+}
+.submit,
+.message {
+  padding: 1rem 2rem;
+}
+.submit input {
+  border: 1px solid #ebebeb;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  box-shadow: 1px 1px 3px rgba(66, 66, 66, 0.75);
+}
+/* Micro Interactions */
+.user-input input {
+  transition: all 300ms;
+}
+.user-input input:hover {
+  box-shadow: 1px 2px 5px rgba(66, 66, 66, 0.75);
+  background-color: #ababab13;
+  transform: scale(1.1);
+}

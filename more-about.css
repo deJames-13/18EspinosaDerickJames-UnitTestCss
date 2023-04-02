@@ -1,0 +1,101 @@
+.about-me-wrapper {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.about-me-wrapper h3 {
+  height: 7rem;
+}
+.about-me-wrapper .me-infos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-left,
+.about-right {
+  padding: 3rem 2rem;
+  width: 50%;
+}
+.about-left {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  gap: 1rem;
+}
+.my-links {
+  width: 100%;
+  height: 30%;
+  margin: 2.5rem 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  border: 1px solid #ebebeb;
+  border-radius: 1rem;
+}
+.my-links .link,
+.my-links .link a {
+  width: 99%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms;
+}
+.my-links .link img {
+  width: 75%;
+  object-fit: contain;
+  transition: all 300ms;
+}
+.my-links .link a:hover {
+  border-radius: 2rem;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb13;
+}
+
+/* Right info */
+.my-information {
+  border-collapse: collapse;
+
+  margin: 2.5rem 0;
+  font-size: 1em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.my-information thead td:first-of-type {
+  border-top-left-radius: 1rem;
+}
+.my-information thead td:last-of-type {
+  border-top-right-radius: 1rem;
+}
+.my-information td {
+  padding: 2rem 3rem;
+}
+.my-information thead tr {
+  background-color: #afdead;
+  color: #2d2d2d;
+  text-align: left;
+}
+
+.my-information .label {
+  color: #ebebeb;
+}
+
+.my-information .value {
+  font-weight: 700;
+}
+.my-information tbody tr {
+  border-bottom: 1px solid #2d2d2d;
+}
+.my-information tbody tr:last-of-type {
+  border-bottom: 2px solid #afdead;
+}
+/* Micro Interactions */
+.my-information tbody tr:hover {
+  background-color: #afdead13;
+  border-bottom: 1px solid #131313;
+}

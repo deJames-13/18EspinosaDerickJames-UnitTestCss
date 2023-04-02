@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Me, Myself, And I - Espinosa</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/ios-glyphs/256/sleeping.png"
+      type="image/x-icon"
+    />
+    <!-- Fonts From Web, Arial Nova + PlayFair Display -->
+    <link href="https://fonts.cdnfonts.com/css/arial-nova" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- EMBEDDED Section Styles -->
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: inherit;
+      }
+
+      img {
+        display: block;
+      }
+
+      body {
+        background-color: #2d2d2d;
+        font-family: 'Arial Nova', sans-serif;
+        font-size: 1.6rem;
+        color: #ebebeb;
+      }
+
+      h1 {
+        font-size: 5.2rem;
+      }
+      h3 {
+        font-size: 3.2rem;
+      }
+      ul {
+        list-style: none;
+      }
+      a,
+      button {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 2rem;
+      }
+      section {
+        width: 100%;
+        min-height: 75rem;
+        display: grid;
+        justify-content: stretch;
+        padding: 8rem 14rem;
+      }
+      section p {
+        font-size: 2.4rem;
+      }
+      section h3 {
+        height: 10rem;
+      }
+      .sec-light {
+        background-color: #ebebeb;
+        color: #2d2d2d;
+      }
+      .sec-dark {
+        background-color: #2d2d2d;
+        color: #ebebeb;
+      }
+
+      .d-nav {
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        padding: 2rem 14rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00000069;
+      }
+      .d-routes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .d-link {
+        border-bottom: none;
+        transition: all 100ms;
+      }
+      .d-logo {
+        height: 5rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+      .d-logo h1 {
+        font-size: 4rem;
+      }
+      .d-logo span {
+        background-color: #2d2d2d;
+        padding: 0 1rem;
+        height: 100%;
+        animation: blinking 0.5s infinite ease-in;
+        transition: all 0.3s;
+      }
+      @keyframes blinking {
+        from {
+          background-color: #2d2d2d;
+        }
+        to {
+          background-color: #ebebeb;
+        }
+      }
+      .d-link:hover {
+        border-bottom: 3px solid #ebebeb;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        background-color: #ebebeb13;
+      }
+    </style>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="./landing.css" />
+    <link rel="stylesheet" href="./author.css" />
+    <link rel="stylesheet" href="./location.css" />
+    <link rel="stylesheet" href="./carousels.css" />
+    <link rel="stylesheet" href="./hobbies.css" />
+    <link rel="stylesheet" href="./more-about.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./media.css" />
+  </head>
+
+  <!-- inline style in body -->
+  <body style="width: 100%">
+    <!-- Nav and logo -->
+    <header>
+      <nav class="d-nav">
+        <div class="d-logo">
+          <h1>d.</h1>
+          <span></span>
+        </div>
+        <ul class="d-routes">
+          <li class="d-link">
+            <a href="#">Home</a>
+          </li>
+          <li class="d-link">
+            <a href="#author">Author</a>
+          </li>
+          <li class="d-link">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="d-link">
+            <a href="#about-page">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main contents -->
+    <main>
+      <!-- Landing section -->
+      <section class="sec-dark">
+        <div class="landing-wrapper">
+          <div class="landing-left">
+            <h1>Welcome to Me, Myself, And I</h1>
+            <a href="#author">Derick James M. Espinosa BSIT-S-1A </a>
+          </div>
+          <div class="landing-right">
+            <div class="me-wrapper">
+              <img src="./images/me.webp" alt="Me" />
+            </div>
+
+            <a href="#author">
+              <img
+                src="https://img.icons8.com/ios-glyphs/72/ebebeb/right3.png"
+              />
+              Know more about me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Author section -->
+      <section class="sec-light" id="author">
+        <div class="author-wrapper">
+          <div class="author">
+            <div class="author-img">
+              <img src="./images/author.webp" alt="Me" />
+            </div>
+            <div class="author-info">
+              <h3>
+                I am <strong><em>Derick James M. Espinosa</em></strong>
+              </h3>
+              <p>
+                a Bachelor of Science in Information Technology (<em>BSIT</em>)
+                student from
+                <b>T</b>echnological <b>U</b>niversity of the <b>P</b>hilippines
+                - <b>T</b>aguig
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="univ-wrapper">
+          <img
+            src="./images/tup_taguig.jpg"
+            alt="Technological University of the Philippines - Taguig"
+            class="univ"
+          />
+          <span class="tup-artisan">
+            <a href="https://www.facebook.com/thephilippineartisantaguig">
+              &copy; The Philippine Artisan - Taguig</a
+            >
+          </span>
+        </div>
+
+        <div class="transparent-box">
+          <div class="box"></div>
+        </div>
+      </section>
+
+      <!-- Author location -->
+      <section class="sec-dark" id="author-location">
+        <div class="location-wrapper">
+          <div class="location-img">
+            <img
+              src="./images/san_pedro.jpg"
+              alt="San Pedro City - Laguna"
+              class="author-loc"
+            />
+          </div>
+          <div class="location-info">
+            <h3>I live in <strong>San Pedro City, Laguna.</strong></h3>
+            <p>
+              San Pedro is the first district of Laguna, and it is almost an
+              hour and a half long from my school in TUP Taguig. Its pretty far
+              and exhausting trip but I still manage to go back and forth from
+              home to school.
+            </p>
+            <p>
+              I graduated elementary here in Landyan Elementary School and
+              highschool in Pacita Complex National and Senior High School.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Author article -->
+      <section class="sec-light" id="page-article">
+        <div class="article-wrapper">
+          <div class="article-info">
+            <h3>I <em>chose</em> this course because...</h3>
+            <br />
+            <p>they say programming career jobs make a lot of money.</p>
+            <br />
+            <div class="article-img">
+              <img
+                src="./images/programming-salary.jpg"
+                alt="moneh"
+                style="width: 30%"
+              />
+            </div>
+            <br />
+            <p>
+              Also when I learned programming, I immediately liked it and
+              started to teach myself through tutorials and crash courses
+              online.
+            </p>
+            <br />
+            <p>
+              It became my ultimate hobby so I wanted a course that involves it.
+              My goal is to improve in programming until I become a Developer
+              and make a lot of
+              <em>$kaching$</em>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hobbies -->
+      <section class="sec-dark" id="hobbies">
+        <div class="hobbies-wrapper">
+          <h3 style="font-family: PlayFair Display">My Hobbies</h3>
+          <ul>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://img.icons8.com/external-konkapp-flat-konkapp/100/null/external-watching-a-movie-stay-at-home-konkapp-flat-konkapp.png"
+                  />
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p>Watching Movies, TV Series and youtube/tiktok videos</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://video-public.canva.com/VAFDEcuWykM/v/1524bf6c51.gif"
+                    alt="reading"
+                  />
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p>Reading books and webtoons</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://thumbs.gfycat.com/AggressiveColorfulHerring-size_restricted.gif"
+                    alt="mobile legends"
+                  />
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p>Playing Mobile Legends and Genshin Impact</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://video-public.canva.com/VAE_4srGJ9g/v/3f37f3b4d3.gif"
+                    alt="music"
+                  />
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p>Listening to music</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://media-public.canva.com/HQjLE/MADuagHQjLE/2/tl.png"
+                    alt="coding"
+                  />
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p>Practicing to code</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://video-public.canva.com/VADhR5bBbWc/videos/4160e1d8da.gif"
+                    alt="sleeping"
+                  />
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p>Sleeping</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Carousel 1 -->
+      <section class="sec-light" id="favo-movies">
+        <div class="carousel-wrapper">
+          <!-- inline font style -->
+          <h3 style="font-family: PlayFair Display">Movies/Series I like</h3>
+          <ul>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://preview.redd.it/h73vrd26c6t71.jpg?width=828&format=pjpg&auto=webp&s=e3e9fb8b8e31c7438fb3b919f2ab010a316ff3cb"
+                    alt="Arcane Poster"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Arcane</em></h4>
+                <p>
+                  Set in Utopian Piltover and the oppressed underground of Zaun,
+                  the story follows the origins of two iconic League Of Legends
+                  champions and the power that will tear them apart.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"
+                    alt="Inception Poster"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Inception</em></h4>
+                <p>
+                  A thief who steals corporate secrets through the use of
+                  dream-sharing technology is given the inverse task of planting
+                  an idea into the mind of a C.E.O., but his tragic past may
+                  doom the project and his team to disaster.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BOTk2NzUyOTctZDdlMS00MDJlLTgzNTEtNzQzYjFhNjA0YjBjXkEyXkFqcGdeQXVyMjg1NDcxNDE@._V1_.jpg"
+                    alt="Dark Poster"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Dark</em></h4>
+                <p>
+                  A family saga with a supernatural twist, set in a German town
+                  where the disappearance of two young children exposes the
+                  relationships among four families.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMjUyNTA3MTAyM15BMl5BanBnXkFtZTgwOTEyMTkyMjE@._V1_FMjpg_UX1000_.jpg"
+                    alt="Maze Runner"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Maze Runner</em></h4>
+                <p>
+                  Thomas is deposited in a community of boys after his memory is
+                  erased, soon learning they're all trapped in a maze that will
+                  require him to join forces with fellow "runners" for a shot at
+                  escape.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1000_.jpg"
+                    alt="Game of Thrones"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Game of Thrones</em></h4>
+                <p>
+                  Nine noble families fight for control over the lands of
+                  Westeros, while an ancient enemy returns after being dormant
+                  for millennia.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://pics.filmaffinity.com/Stranger_Things_4_TV_Series-530118338-large.jpg"
+                    alt="Stranger Things"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Stranger Things</em></h4>
+                <p>
+                  When a young boy disappears, his mother, a police chief and
+                  his friends must confront terrifying supernatural forces in
+                  order to get him back.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BZjNhODYzZGItZWQ3Ny00ZjViLTkxMTUtM2EzN2RjYjU2OGZiXkEyXkFqcGdeQXVyMTI5MTc0OTIy._V1_FMjpg_UX1000_.jpg"
+                    alt="South Park"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>South Park</em></h4>
+                <p>
+                  Follows the misadventures of four irreverent grade-schoolers
+                  in the quiet, dysfunctional town of South Park, Colorado.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_FMjpg_UX1000_.jpg"
+                    alt="Rick and Morty"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Rick and Morty</em></h4>
+                <p>
+                  An animated series that follows the exploits of a super
+                  scientist and his not-so-bright grandson.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Carousel 2 -->
+      <section class="sec-dark" id="favo-books">
+        <div class="carousel-wrapper">
+          <!-- inline font style -->
+          <h3 style="font-family: PlayFair Display">Books I like</h3>
+          <ul>
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659905828i/7235533.jpg"
+                    alt="Way of Kings"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Way of Kings</em></h4>
+                <p>by <em>Brandon Sanderson</em></p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654573897i/34002132.jpg"
+                    alt="Oathbringer"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Oathbringer</em></h4>
+                <p>by <em>Brandon Sanderson</em></p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659905768i/17332218.jpg"
+                    alt="Words of Radiance"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Words of Radiance</em></h4>
+                <p>by <em>Brandon Sanderson</em></p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1617768316i/68428.jpg"
+                    alt="Mistborn: The Final Empire"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Mistborn: The Final Empire</em></h4>
+                <p>by <em>Brandon Sanderson</em></p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1240256182i/1268479.jpg"
+                    alt="Warbreaker"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Warbreaker</em></h4>
+                <p>by <em>Brandon Sanderson</em></p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1464201430i/12127810.jpg"
+                    alt="House of Hades"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>House of Hades</em></h4>
+                <p>by <em>Rick Riordan</em></p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519022209l/4556058._SX318_.jpg"
+                    alt="The Last Olympian"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>The Last Olympian</em></h4>
+                <p>by <em>Rick Riordan</em></p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <div class="card-img">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1361038385i/561456.jpg"
+                    alt="Titan's Curse"
+                  />
+                </div>
+                <hr />
+              </div>
+              <div class="card-bottom">
+                <h4 class="card-title"><em>Titan's Curse</em></h4>
+                <p>by <em>Rick Riordan</em></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Quote 1 -->
+      <!-- <section class="sec-light">
+        <div class="quote-wrapper">
+          <h3 style="font-family: PlayFair Display">Quote #1</h3>
+        </div>
+      </section> -->
+      <!-- Quote 2 -->
+      <!-- <section class="sec-dark">
+        <div class="quote-wrapper">
+          <h3 style="font-family: PlayFair Display">Quote #2</h3>
+        </div>
+      </section> -->
+      <!-- Quote 3 -->
+      <!-- <section class="sec-light">
+        <div class="quote-wrapper">
+          <h3 style="font-family: PlayFair Display">Quote #3</h3>
+        </div>
+      </section> -->
+
+      <!-- More about info -->
+      <section class="sec-dark">
+        <div class="about-me-wrapper">
+          <h3 style="font-family: PlayFair Display">More about me</h3>
+          <div class="me-infos">
+            <div class="about-left">
+              <ul class="my-links">
+                <li class="link">
+                  <a href="https://github.com/deJames-13"
+                    ><img
+                      src="https://img.icons8.com/fluency/100/null/github.png"
+                      alt="github.com/deJames-13"
+                    />
+                  </a>
+                </li>
+                <li class="link">
+                  <a href="mailto:derickjames.espinosa@tup.edu.ph">
+                    <img src="https://img.icons8.com/dusk/100/null/gmail.png" />
+                  </a>
+                </li>
+                <li class="link">
+                  <a href="https://www.facebook.com/the2ndpercyfied/">
+                    <img
+                      src="https://img.icons8.com/office/100/null/facebook-new.png"
+                      alt="facebook.com/the2ndpercyfied"
+                    />
+                  </a>
+                </li>
+                <li class="link">
+                  <a href="https://twitter.com/d_of_ten_fools">
+                    <img
+                      src="https://img.icons8.com/office/100/null/twitter.png"
+                      alt="twitter.com/d_of_ten_fools"
+                    />
+                  </a>
+                </li>
+                <li class="link">
+                  <a href="https://www.instagram.com/doftenfools/">
+                    <img
+                      src="https://img.icons8.com/office/100/null/instagram.png"
+                      alt="instagram.com/doftenfools/"
+                    />
+                  </a>
+                </li>
+                <li class="link">
+                  <a href="https://airsick-lowlander.netlify.app/">
+                    <img
+                      src="https://img.icons8.com/ios-glyphs/100/sleeping.png"
+                      alt="airsick"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <div class="about-right">
+              <table class="my-information">
+                <thead>
+                  <tr>
+                    <td>me.db</td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tr>
+                  <td class="label">username:</td>
+                  <td class="value">derick</td>
+                </tr>
+                <tr>
+                  <td class="label">email:</td>
+                  <td class="value">derickjames.espinosa@tup.edu.ph</td>
+                </tr>
+                <tr>
+                  <td class="label">age:</td>
+                  <td class="value">19</td>
+                </tr>
+                <tr>
+                  <td class="label">height:</td>
+                  <td class="value">5'8</td>
+                </tr>
+                <tr>
+                  <td class="label">mbti:</td>
+                  <td class="value">INTJ</td>
+                </tr>
+                <tr>
+                  <td class="label">zodiac:</td>
+                  <td class="value">pisces</td>
+                </tr>
+                <tr>
+                  <td class="label">school:</td>
+                  <td class="value">
+                    Technological University of the Philippines - Taguig
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="section">section: </label></td>
+                  <td class="value">BSIT S-1A</td>
+                </tr>
+                <tr>
+                  <td class="label">year</td>
+                  <td class="value">
+                    <input type="checkbox" name="yearlevel" checked /> 1st year
+                    <br />
+                    <input type="checkbox" name="yearlevel" /> 2nd year
+                    <br />
+                    <input type="checkbox" name="yearlevel" /> 3rd year
+                    <br />
+                    <input type="checkbox" name="yearlevel" /> 4th year
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">section:</td>
+                  <td class="value">BSIT S - 1A</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="label" for="favcolor">favcolors: </label>
+                  </td>
+                  <td class="value">
+                    <input
+                      type="color"
+                      class="favcolor"
+                      name="favcolor"
+                      value="#13dead"
+                    />
+                    <input
+                      type="color"
+                      id="favcolor"
+                      name="favcolor"
+                      value="#afdead"
+                    />
+                    <input
+                      type="color"
+                      id="favcolor"
+                      name="favcolor"
+                      value="#2d2d2d"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="label" for="favlang">favlanguages: </label>
+                  </td>
+                  <td class="value" name="favlang">
+                    <h5><em>python</em></h5>
+                    <input type="range" value="69" min="0" max="100" />
+                    <h5><em>c++</em></h5>
+                    <input type="range" value="20" min="0" max="100" />
+                    <h5><em>javascript</em></h5>
+                    <input type="range" value="10" min="0" max="100" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="sec-light" id="contact">
+        <div class="contact-wrapper">
+          <h3 style="font-family: PlayFair Display">Contact me</h3>
+          <div class="contact-container">
+            <hr />
+            <br />
+            <form action="#contact" class="make-contact">
+              <div class="user-info">
+                <div class="user-input">
+                  <label for="username"> your name: </label>
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="username"
+                    class="input-text"
+                  />
+                </div>
+                <div class="user-input">
+                  <label for="email"> your email: </label>
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="email"
+                    class="input-text"
+                  />
+                </div>
+                <div class="user-input">
+                  <label for="email"> add date: </label>
+                  <input
+                    type="datetime-local"
+                    name="date-now"
+                    placeholder="date-now"
+                    value="2023-04-04T01:00"
+                    class="input-date"
+                  />
+                </div>
+              </div>
+              <div class="user-input message">
+                <textarea
+                  class="input-textbox"
+                  name="message"
+                  id="#message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Send Message!"
+                ></textarea>
+              </div>
+              <div class="user-input submit">
+                <input type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- End - Thank you -->
+      <section
+        class="sec-light"
+        style="position: relative; display: grid; place-items: center"
+      >
+        <h1 style="font-family: PlayFair Display">thank you!</h1>
+        <!-- About page footer -->
+
+        <footer>
+          <div
+            id="about-page"
+            class="footer"
+            style="
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              padding: 2rem 3rem;
+              background-color: #2d2d2d69;
+            "
+          >
+            <h2>&nbsp;About this page.</h2>
+            <p style="font-size: 0.8rem !important">
+              &#9432; This page is created to accomplish a requirement in Unit
+              Test 2 of Advanced HTML
+              <br />
+              &copy; 18EspinosaDerickJamesMonton - BSIT S-1A 22-23
+            </p>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

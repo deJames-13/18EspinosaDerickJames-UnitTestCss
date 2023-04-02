@@ -1,0 +1,84 @@
+/* AUTHOR INFO */
+.author-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 7.2rem;
+}
+.author {
+  width: 60%;
+}
+.author-img {
+  position: relative;
+  flex-grow: 1;
+  padding-top: 5rem;
+  display: grid;
+  justify-content: stretch;
+}
+.author-img img {
+  position: relative;
+  width: 40%;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1rem rgb(45, 45, 45, 0.3);
+}
+.author-info {
+  display: grid;
+  gap: 3rem;
+  padding: 5rem 0;
+  padding-right: 3rem;
+}
+#author {
+  position: relative;
+}
+.transparent-box,
+.univ-wrapper {
+  width: 40%;
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+.univ {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.box {
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  z-index: 0;
+  right: 0;
+  background-color: #2d2d2d69;
+}
+.tup-artisan {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 0.5rem;
+  z-index: 1;
+}
+
+/* END AUTHOR INFO */
+/* Micro Interacions */
+.tup-artisan a,
+.author-img img,
+.box {
+  transition: all 0.3s ease-in;
+}
+.tup-artisan a:hover {
+  color: #ebebeb;
+}
+.author-img img:hover {
+  transform: scale(1.2);
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 6rem rgb(45, 45, 45, 0.3);
+}
+.box:hover {
+  z-index: -1;
+}
+.univ:hover {
+  width: 110%;
+  overflow: hidden;
+}
