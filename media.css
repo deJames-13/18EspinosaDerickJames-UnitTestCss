@@ -7,7 +7,7 @@
 }
 
 /* Rsponsive .1875 * 16px = 3px */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   html {
     font-size: 18.75%;
   }
@@ -32,6 +32,8 @@
     max-width: 80%;
   }
   .carousel-wrapper ul {
+    margin: 0 auto;
+    width: 50%;
     min-height: 90%;
     grid-template-columns: 1fr;
     justify-content: stretch;
@@ -53,5 +55,27 @@
   .card-bottom p {
     height: 60%;
     overflow: scroll;
+  }
+  .me-infos,
+  .about-me-wrapper {
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .my-links,
+  .about-left,
+  .about-right {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+  }
+  .contact-container,
+  .contact-wrapper {
+    height: 100%;
+    width: 80%;
+  }
+  .user-info {
+    flex-direction: column;
+    align-items: start;
   }
 }
